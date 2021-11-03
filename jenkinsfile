@@ -2,30 +2,18 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Sample1') {
             steps {
-                echo 'Hello World'
+                echo 'Sample1 file'
+                bat 'Sample1.bat'
             }
         }
-        stage('Build') {
+        stage('Sample2') {
             steps {
-                echo 'Building'
+                echo 'Sample2 file'
+                bat 'Sample2.bat'
             }
         }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'testing'
-            }
-        }
-        stage('Release') {
-            steps {
-                echo 'Releasing'
-            }
-        }
+        
         }
     }
