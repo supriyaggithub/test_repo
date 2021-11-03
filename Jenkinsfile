@@ -22,7 +22,7 @@ pipeline {
         stage('java2') {
             steps {
                 echo 'Executing Second java code'
-                bat 'java Two.java'
+                bat 'javac Two.java'
                 bat 'java Two'
             }
             
